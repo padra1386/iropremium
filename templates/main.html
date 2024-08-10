@@ -1,0 +1,23 @@
+{% load static %}
+{% load socialaccount %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+{#<link rel="stylesheet" href=""{% static 'base/css/flowbite.min.css' %}>#}
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+{% include "base/navbar.html" %}
+{% block content %}
+
+{% endblock %}
+{#<script src="{% static 'base/js/flowbite.min.js' %}"></script>#}
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+<script src="{% static 'base/js/script.js' %}"></script>
+{% block js %}
+
+{% endblock %}
+</body>
+</html>
